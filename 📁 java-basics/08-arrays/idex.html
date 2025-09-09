@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Map Example</title>
+</head>
+<body>
+
+<h2>HTML Image Map Example</h2>
+
+<!-- Image with usemap -->
+<img src="world-map.jpg" alt="World Map" usemap="#worldmap" width="600">
+
+<!-- Map Definition -->
+<map name="worldmap">
+  <!-- Rectangular clickable area -->
+  <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/India" alt="India">
+  
+  <!-- Circular clickable area -->
+  <area shape="circle" coords="300,200,50" href="https://en.wikipedia.org/wiki/USA" alt="USA">
+  
+  <!-- Polygon clickable area -->
+  <area shape="poly" coords="400,300,450,350,500,300,450,250" href="https://en.wikipedia.org/wiki/Australia" alt="Australia">
+</map>
+
+</body>
+</html>
